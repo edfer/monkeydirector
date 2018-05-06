@@ -8,15 +8,32 @@
 }
 
 .board {
-    h2 {
-        text-align:center;
-        padding:50px;
-    }
+    
+    //align-items: center;
+    text-size:70px;
     color:white;
     background: gray;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    justify-content: space-evenly;
     height:100vh;
+    //width: calc(90% - 20px);
     @include if-is-desktop{}
+}
+
+.boardtitle {
+    display:flex;
+    flex-order: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size:70px;
+}
+
+.board-item {
+    margin-top: 50px;
+    font-size:70px;
+    height: 600px;
+    width: 600px;
+    background: red;
 }
