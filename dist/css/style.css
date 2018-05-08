@@ -45,14 +45,17 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-@media all and (min-width: 1026px) {
-  .container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto; } }
+.container {
+  font-family: "Kollektif", sans-serif; }
+  @media all and (min-width: 1026px) {
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto; } }
 
 .board {
-  text-size: 70px;
+  align-items: center;
+  text-size: 50px;
   color: white;
   background: gray;
   display: flex;
@@ -68,17 +71,15 @@ table {
   justify-content: space-evenly;
   font-size: 70px; }
 
-.board-item {
+.board-item-01 {
   margin-top: 50px;
-  font-size: 70px;
+  font-size: 30px;
   height: 600px;
   width: 600px;
-  background: red; }
-
-.flexorder {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap; }
+  background: #8E8E8E;
+  text-align: center; }
+  .board-item-01 iframe {
+    width: 100%; }
 
 img,
 embed,

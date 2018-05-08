@@ -1,4 +1,7 @@
 .container {
+    font-family: $main-font-family;
+
+    
     @include if-is-desktop {
         width: 100%;
         max-width: 1200px;
@@ -9,8 +12,8 @@
 
 .board {
     
-    //align-items: center;
-    text-size:70px;
+    align-items: center;
+    text-size:50px;
     color:white;
     background: gray;
     display: flex;
@@ -30,10 +33,15 @@
     font-size:70px;
 }
 
-.board-item {
+.board-item-01 {
     margin-top: 50px;
-    font-size:70px;
+    font-size:30px;
     height: 600px;
     width: 600px;
-    background: red;
+    background: #8E8E8E;
+    text-align: center;
+
+    iframe {
+        width:100%;
+    }
 }
