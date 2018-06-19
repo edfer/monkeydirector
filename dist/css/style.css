@@ -57,29 +57,43 @@ table {
   align-items: center;
   text-size: 50px;
   color: white;
-  background: gray;
+  background: #989399;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  height: 100vh; }
+  width: 100%; }
 
 .boardtitle {
   display: flex;
   flex-order: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  font-size: 30px; }
+  font-size: 20px;
+  padding: 10px 0px;
+  background: #e79f37; }
 
 .board-item-01 {
-  margin-top: 50px;
   font-size: 30px;
-  height: 600px;
-  width: 600px;
-  background: #8E8E8E;
+  width: 100%;
+  background: #c9cad2;
   text-align: center; }
-  .board-item-01 iframe {
-    width: 100%; }
+  .board-item-01 ul {
+    padding: 15px; }
+    .board-item-01 ul li {
+      display: inline;
+      margin: 30px; }
+      .board-item-01 ul li a {
+        color: #050510; }
+  .board-item-01 .vimeo-div {
+    padding: 56.25% 0 0 0;
+    position: relative; }
+    .board-item-01 .vimeo-div iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
 
 img,
 embed,
@@ -96,9 +110,9 @@ textarea {
   box-sizing: border-box; }
 
 .web-header {
-  background: black;
+  background: #050510;
   color: white;
-  height: 60px;
-  text-align: center;
-  font-size: 40px;
-  padding-top: 20px; }
+  height: 80px;
+  text-align: center; }
+  .web-header img {
+    height: 100%; }

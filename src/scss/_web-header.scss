@@ -1,8 +1,12 @@
 .web-header {
-    background: black;
+    background: $color-gray-dark;
     color: white;
-    height: 60px;
+    height: 80px;
     text-align: center;
-    font-size: 40px;
-    padding-top: 20px;
+    //font-size: 40px;
+    //padding-top: 20px;
+
+    img {
+        height: 100%;
+    }
 }

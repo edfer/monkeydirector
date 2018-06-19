@@ -1,47 +1,71 @@
 .container {
     font-family: $main-font-family;
 
-    
+
     @include if-is-desktop {
         width: 100%;
         max-width: 1200px;
         margin: 0 auto;
-        
     }
 }
 
 .board {
-    
+
     align-items: center;
-    text-size:50px;
-    color:white;
-    background: gray;
+    text-size: 50px;
+    color: white;
+    background: $color-gray;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    height:100vh;
-    //width: calc(90% - 20px);
-    @include if-is-desktop{}
+    justify-content: space-evenly; //height:100vh;
+    width: 100%;
+    @include if-is-desktop {}
 }
 
 .boardtitle {
-    display:flex;
+    display: flex;
     flex-order: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    font-size:30px;
+    font-size: $font-size-h4;
+    padding: 10px 0px;
+    background: $color-mustard;
+    //height: 30px;
 }
 
 .board-item-01 {
-    margin-top: 50px;
-    font-size:30px;
-    height: 600px;
-    width: 600px;
-    background: #8E8E8E;
+    //display:flex;
+    //margin-top: 0px;
+    font-size: 30px; //height: 600px;
+    width: 100%;
+    background: $color-gray-light;
     text-align: center;
 
-    iframe {
-        width:100%;
+    ul {
+        padding:15px;
+
+
+        li {
+            display: inline;
+            margin: 30px;
+            a {
+
+                color: $color-gray-dark ;
+            }
+        }
+    }
+
+    .vimeo-div {
+        padding: 56.25% 0 0 0;
+        position: relative;
+
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
     }
 }
