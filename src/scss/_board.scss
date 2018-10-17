@@ -9,37 +9,33 @@
     }
 }
 
-.wrap {
-    background-color: $color-gray-blue;
-}
-
-.boardtitle {
-    // display: flex;
-    // flex-order: row;
-    // flex-wrap: wrap;
-    // justify-content: space-evenly;
-    margin: 0 auto;
-    text-align: center;
-    font-size: $font-size-h4;
-    padding: 10px 0px;
-    background: $color-mustard;
-    animation-name: agile;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    animation-direction: alternate;
-}
-
-@keyframes agile {
-    0% {
-        width: 100%;
-    }
-
-    100% {
-        width: 70%;
-    }
-}
-
+// .wrap {
+//     background-color: $color-gray-blue;
+// }
+// .boardtitle {
+//     // display: flex;
+//     // flex-order: row;
+//     // flex-wrap: wrap;
+//     // justify-content: space-evenly;
+//     margin: 0 auto;
+//     text-align: center;
+//     font-size: $font-size-h4;
+//     padding: 10px 0px;
+//     background: $color-mustard;
+//     animation-name: agile;
+//     animation-duration: 3s;
+//     animation-iteration-count: infinite;
+//     animation-timing-function: ease-in-out;
+//     animation-direction: alternate;
+// }
+// @keyframes agile {
+//     0% {
+//         width: 100%;
+//     }
+//     100% {
+//         width: 70%;
+//     }
+// }
 .board {
 
     align-items: center;
@@ -60,7 +56,7 @@
     //margin-top: 0px;
     font-size: 30px; //height: 600px;
     width: 100%;
-    background: $color-gray-light;
+    background: white;
     text-align: center;
 
     ul {
@@ -81,12 +77,15 @@
         color: white;
         border-top: 1px solid $color-gray-blue;
 
-        h1 {
-            font-size: $font-size-h1;
-            padding: 15px 0px;
-            color: $color-gray-dark;
-            
+
+        .rounded-title {
+            h1 {
+                font-size: $font-size-h1;
+                padding: 15px 0px;
+                color: $color-gray-dark;
+            }
         }
+
 
         .reel-text {
             color: $color-gray-dark;
@@ -97,10 +96,10 @@
             margin-bottom: 15px;
             border-radius: 10px;
             border: 1px solid $color-gray-blue;
-            line-height:1.3em;
+            line-height: 1.3em;
 
             @include if-is-desktop {
-                width:60%;
+                width: 60%;
                 border: none;
                 padding: 0px 0px 10px 0px;
             }

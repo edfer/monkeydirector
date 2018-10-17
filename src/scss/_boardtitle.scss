@@ -1,0 +1,30 @@
+
+.wrap {
+    background-color: $color-gray-blue;
+}
+.boardtitle {
+    // display: flex;
+    // flex-order: row;
+    // flex-wrap: wrap;
+    // justify-content: space-evenly;
+    margin: 0 auto;
+    text-align: center;
+    font-size: $font-size-h4;
+    padding: 10px 0px;
+    background: $color-mustard;
+    animation-name: agile;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+@keyframes agile {
+    0% {
+        width: 100%;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
